@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp"
+    tools:context=".HistoryActivity">
+
+    <TextView
+        android:id="@+id/historyTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="19dp"
+        android:fontFamily="@font/intro"
+        android:text="ПІДСУМКИ"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="56sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/historyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/historyTitleTextView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/intro"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/backToHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_button_background"
+        android:fontFamily="@font/intro"
+        android:padding="12dp"
+        android:text="ДОДОМУ"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

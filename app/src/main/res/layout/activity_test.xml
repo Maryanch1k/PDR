@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp"
+    tools:context=".TestActivity">
+
+    <!-- Номера вопросов -->
+    <GridLayout
+        android:id="@+id/questionNumbersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:columnCount="8"
+        android:fontFamily="@font/intro"
+        android:padding="16dp"
+        android:rowCount="1"
+        android:useDefaultMargins="true"
+        android:alignmentMode="alignMargins">
+
+        <е
+            android:id="@+id/questionNumber1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="1"
+            android:fontFamily="@font/intro"
+            android:background="@drawable/number_background"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/questionNumber2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="2"
+            android:fontFamily="@font/intro"
+            android:background="@drawable/number_background"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/questionNumber3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="3"
+            android:fontFamily="@font/intro"
+            android:background="@drawable/number_background"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/questionNumber4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="4"
+            android:fontFamily="@font/intro"
+            android:background="@drawable/number_background"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/questionNumber5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="5"
+            android:fontFamily="@font/intro"
+            android:background="@drawable/number_background"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/questionNumber6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="6"
+            android:fontFamily="@font/intro"
+            android:background="@drawable/number_background"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/questionNumber7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="7"
+            android:fontFamily="@font/intro"
+            android:background="@drawable/number_background"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/questionNumber8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="8"
+            android:fontFamily="@font/intro"
+            android:background="@drawable/number_background"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_margin="2dp"/>
+    </GridLayout>
+
+    <!-- Вопрос -->
+
+    <!-- Варианты ответов -->
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionNumbersLayout"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/intro"
+        android:text="КОЛИ ПРАЦЮЄ «ПРАВИЛО ПРАВОЇ РУКИ»"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/answersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/answer_background">
+
+            <CheckBox
+                android:id="@+id/answerCheckBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/checkbox_selector"
+                android:checked="true"
+                android:fontFamily="@font/intro"
+                android:padding="16dp"
+                android:text="СВІТЛОФОР ВСТАНОВЛЕНИЙ, АЛЕ ВІН НЕСПРАВНИЙ АБО БЛИМАЄ ЖОВТЕ СВІТЛО."
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/answer_background">
+
+            <CheckBox
+                android:id="@+id/answerCheckBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/checkbox_selector"
+                android:fontFamily="@font/intro"
+                android:padding="16dp"
+                android:text="ВІДСУТНІЙ СВІТЛОФОР;"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/answer_background">
+
+            <CheckBox
+                android:id="@+id/answerCheckBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/checkbox_selector"
+                android:fontFamily="@font/intro"
+                android:padding="16dp"
+                android:text="ПЕРЕХРЕСТЯ БЕЗ РЕГУЛЮВАЛЬНИКА;"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Кнопки навигации -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_button_background"
+            android:text="НАЗАД"
+            android:fontFamily="@font/intro"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/custom_button_background"
+            android:text="ДАЛІ"
+            android:fontFamily="@font/intro"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
